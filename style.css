@@ -1,0 +1,165 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Comfortaa', cursive;
+  font-size: 62,5%;
+  background-color: #cee3f9;
+background-image: linear-gradient(62deg, #cee3f9 15%, #cbfff3 50%, #ffffff 99%);
+
+}
+.container{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+
+}
+.card{
+  
+  width: 30rem;
+  height: 30rem;
+  background-color: rgba(31, 210, 216, 0.726);
+  z-index: -1;
+  position: relative;
+  top: 30%;
+  transform: rotate(30deg);
+}
+.money-img{
+  width: 5rem;
+  margin: 1rem;
+}
+
+.header{
+  text-align: center;
+  margin-bottom: 5rem;
+
+}
+.header-title{
+  margin-bottom: 1rem;
+}
+.container-currency{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  margin-bottom: 5rem;
+}
+
+
+
+
+.swap-rate-container{
+  margin-bottom: 2rem;
+  font-weight: 800;
+  color: rgb(0, 110, 255);
+}
+
+
+/*BUTTON*/
+.btn{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 700;
+  font-size: 1.1rem;
+  
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%233475ECFF' stroke-width='7' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 100px;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border: none;
+  margin: 2rem;
+  
+  
+
+}
+
+.btn:hover{
+  
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill=' rgb(5, 35, 100)' rx='100' ry='100' stroke='rgb(0, 110, 255)' stroke-width='7' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+
+  color: white;
+ 
+  transition: all .8s ease-in-out;
+
+}
+
+
+
+select{ 
+  font-family: 'Comfortaa', cursive;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-right: 2rem;
+  cursor: pointer;
+  
+
+  
+  padding: .5rem 2.5rem .9rem 1rem;
+  border-radius: 5px;
+  appearance: none;
+  background-image: url(./img/arrow-down-sign-to-navigate.svg);
+  
+  background-position: right 10px top 50% ,0 ,0;
+  background-repeat: no-repeat;
+  background-size: 1rem auto, 100%;
+}
+select > *{ 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: rgb(255, 255, 255);
+ font-weight: 400;
+ cursor: pointer;
+
+}
+.currency{
+  overflow: hidden;
+  margin: -4px;
+}
+
+
+
+.currency #currency-one{
+  border-bottom: 4px solid rgb(0, 98, 255);
+}
+
+.currency  #currency-two{ 
+  
+  border-bottom: 4px solid rgb(255, 115, 0);
+  
+}
+
+input{
+  font-family: 'Comfortaa', cursive;;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  text-align: right;
+  padding: .5rem .5rem .9rem 1rem;
+  
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  
+}
+
+
+select:focus,
+input:focus,
+button:focus{
+  outline: 0;
+}
